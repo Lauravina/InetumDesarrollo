@@ -1,18 +1,14 @@
-pipeline
-{
-  agent any
-  stages
-  {
-    stage{"hola mundo")
-          {
-            steps
-            {
-              script
-              {
-                echo "Hola mundo"
-              }
+pipeline 
+{ 
+    agent any 
+    stages 
+    { 
+        stage("Saludo por la consola") 
+        { 
+            steps 
+            { 
+                echo 'Hola que tal?' 
             } 
-          }
-
-         }
-  }
+        } 
+    } 
+} 
